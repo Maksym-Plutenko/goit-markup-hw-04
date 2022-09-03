@@ -69,7 +69,8 @@ body {
 .team-list,
 .address-list,
 .filters-list,
-.projects-grid {
+.projects-grid,
+.socials-list {
   list-style-type: none;
   text-indent: 0;
   margin: 0;
@@ -149,6 +150,13 @@ p {
 
 .header-contacts-link {
   color: var(--content--text-color);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-contacts-icon {
+  fill: currentColor;
 }
 
 /* Front section */
@@ -201,6 +209,24 @@ p {
 .benefits-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.benefits-item-rectangle {
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
+
+/* .benefits-item-logo {
+  width: 70px;
+  height: 70px;
+} */
 
 .benefits-item-title {
   font-weight: 700;
@@ -282,6 +308,29 @@ p {
 .team-member-position {
   color: var(--content--text-color);
 }
+
+  /* social network's links*/
+.socials-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.socials-link {
+  height: 44px;
+  width: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: tomato;
+  border-radius: 50%;
+}
+
+
+
+
 
 /* Footer */
 .footer {
