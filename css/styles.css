@@ -26,6 +26,7 @@
   /* icon colors*/
   --main-icon-color: #afb1b8;
   --secondary-icon-color: #ffffff;
+  --icon-bg-footer-color: rgba(255, 255, 255, 0.1);
 }
 
 /*main text style*/
@@ -320,7 +321,7 @@ p {
   margin-bottom: 16px;
 }
 
-/* social network's links*/
+  /* social network's links*/
 .socials-list {
   display: flex;
   gap: 10px;
@@ -387,6 +388,12 @@ p {
   padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
 .footer-logo {
   display: block;
   margin-bottom: 20px;
@@ -414,6 +421,26 @@ p {
 .address-list-link {
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-socials-title {
+  /* font-family: 'Roboto';
+  font-style: normal; */
+  /* font-weight: 700; */
+  /* font-size: 14px; */
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--light-text-color);
+
+  margin-bottom: 20px;
+}
+
+  /* social network's links*/
+.footer-socials-link {
+color: var(--secondary-icon-color);
+background-color: var(--icon-bg-footer-color);
 }
 
 /* Portfolio page */
