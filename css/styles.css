@@ -321,7 +321,7 @@ p {
   margin-bottom: 16px;
 }
 
-  /* social network's links*/
+/* social network's links*/
 .socials-list {
   display: flex;
   gap: 10px;
@@ -437,10 +437,10 @@ p {
   margin-bottom: 20px;
 }
 
-  /* social network's links*/
+/* social network's links*/
 .footer-socials-link {
-color: var(--secondary-icon-color);
-background-color: var(--icon-bg-footer-color);
+  color: var(--secondary-icon-color);
+  background-color: var(--icon-bg-footer-color);
 }
 
 /* Portfolio page */
