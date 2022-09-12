@@ -50,12 +50,9 @@ body {
 
 .header-navigation-link:hover,
 .header-contacts-link:hover,
-.address-list-link:hover {
-  color: var(--selected-text-color);
-}
-
+.address-list-link:hover,
+.header-navigation-link:focus,
 .header-contacts-link:focus,
-.address-list-link:focus,
 .address-list-link:focus {
   color: var(--selected-text-color);
 }
@@ -183,6 +180,9 @@ p {
   background-color: var(--main-bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../images/front/background.jpg);
+  background-repeat: no-repeat;
+  background-position: left calc(50%) top;
 }
 
 .front-title {
@@ -213,6 +213,11 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--light-text-color);
+
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Benefits */
@@ -467,9 +472,13 @@ p {
   color: inherit;
 }
 
-.filters-btn:hover {
+.filters-btn:hover,
+.filters-btn:focus {
   background-color: var(--button-bg-main-color);
   color: var(--light-text-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-grid {
@@ -480,8 +489,17 @@ p {
 }
 
 .projects-grid-item {
-  /* border-bottom: 1px solid var(--main-border-color); */
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-img {
